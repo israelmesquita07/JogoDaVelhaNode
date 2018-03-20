@@ -1,4 +1,4 @@
-# JogoDaVelhaNode
+# JogoDaVelhaNode.JS
 Um jogo da velha totalmente novo usando variados recursos do Node.
 
 Foi criado este projeto com o intuito de expandir os conhecimentos de Node.js e suas diversas aplicações.
