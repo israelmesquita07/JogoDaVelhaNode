@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="style.css">
+    <script src="dom2image.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Jogo da Velha</title>
 </head>
 <body>
@@ -14,25 +16,26 @@
       
         <div class="collapse navbar-collapse" id="navbarColor01">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <li id="salva-local" class="nav-item">
+              <a class="nav-link" href="#">Salvar Localmente</a>
+            </li>
+            <li id="carrega-local" class="nav-item">
+              <a class="nav-link" href="#">Carregar Localmente</a>
+            </li>
+            <li id="limpar" class="nav-item">
+              <a class="nav-link" href="#">Limpar Localmente</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="games.html">Ver Jogos</a>
             </li>
           </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Jogador X">
-            <input class="form-control mr-sm-2" type="text" placeholder="Jogador 0">
-            <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-          </form>
+          <div class="form-inline my-2 my-lg-0">
+            <input id ="jogador-x" class="form-control mr-sm-2" type="text" placeholder="Jogador X">
+            <input id ="jogador-o" class="form-control mr-sm-2" type="text" placeholder="Jogador 0">
+            <button id="salvar" style="display:none;" class="btn btn-secondary my-2 my-sm-0" type="submit">Salvar</button>
+          </div>
         </div>
+        <div id="modais"></div>
       </nav>
 
       <div id="velha" class="velha">

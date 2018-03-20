@@ -44,3 +44,49 @@ body{
 .velha .quadro:last-child{
     border: none;
 }
+
+span{
+    user-select: none;
+    margin: 0;
+}
+
+#modais{
+    position: absolute;
+    margin: 130px auto;
+    font-family: inherit;
+    z-index: 3;
+}
+
+.modalClass{
+    background: wheat;
+    width: 200px;
+    padding: 20px;
+    display: block;
+    margin-bottom: 10px;
+    animation-name: aparecer;
+    animation-duration: 0.4s;
+}
+
+.remover{
+    animation: desaparecer 0.4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes aparecer{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes desaparecer{
+    50%{
+        transform: translateX(5%);
+    }
+    100%{
+        transform: translateX(-200%);
+    }
+
+}

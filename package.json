@@ -1,0 +1,24 @@
+{
+  "name": "jogodavelhanode",
+  "version": "1.0.0",
+  "description": "Um jogo da velha totalmente novo usando variados recursos do Node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/israelmesquita07/JogoDaVelhaNode.git"
+  },
+  "author": "israelmesquita07",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/israelmesquita07/JogoDaVelhaNode/issues"
+  },
+  "homepage": "https://github.com/israelmesquita07/JogoDaVelhaNode#readme",
+  "dependencies": {
+    "knex": "^0.14.4",
+    "mysql": "^2.15.0",
+    "restify": "^6.3.4"
+  }
+}
